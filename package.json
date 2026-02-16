@@ -1,0 +1,23 @@
+{
+  "name": "hillel_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/nonexistentware/Hillel_Cypress#readme",
+  "bugs": {
+    "url": "https://github.com/nonexistentware/Hillel_Cypress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonexistentware/Hillel_Cypress.git"
+  },
+  "license": "ISC",
+  "author": "Igor_Sinchuk",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cypress": "^15.10.0"
+  }
+}
