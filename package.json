@@ -15,9 +15,18 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:qauto": "cypress run  --config-file cypress.qauto.js",
+    "cy:qauto2": "cypress run  --config-file cypress.qauto2.js",
+    "cy:qauto:open": "cypress open --config-file cypress.qauto.js",
+    "cy:qauto2:open": "cypress open --config-file cypress.qauto2.js",
+    "report:open": "open cypress/reports/html/index.html"
   },
   "devDependencies": {
-    "cypress": "^15.10.0"
+    "cypress": "^15.11.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
   }
 }
