@@ -228,11 +228,14 @@ describe("Button register", () => {
       },
     });
   });
-  it("Register new user", () => {
+  it.only("Register new user", () => {
+    const email = `testuser_${Date.now()}@gmail.com`;
+    console.log(email);
+
     cy.contains("button", "Sign up").click();
     cy.get("#signupName").type("Name").focus().blur();
     cy.get("#signupLastName").type("Last").focus().blur();
-    cy.get("#signupEmail").type("igor.sinchuk+test1@gmai.lcom").focus().blur();
+    cy.get("#signupEmail").type(email).focus().blur();
     cy.get("#signupPassword").type("Qwertyui123!").focus().blur();
     cy.get("#signupRepeatPassword").type("Qwertyui123!").focus().blur();
     cy.contains("Register").click();
